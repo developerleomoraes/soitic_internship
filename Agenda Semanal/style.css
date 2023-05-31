@@ -1,0 +1,111 @@
+/* Importação da font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Global ___________________________________________ */
+* {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: #000000;
+}
+
+
+
+/* body _____________________________________________ */
+body {
+    background-color: #EEEADE;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.301);
+}
+
+/* main */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* Table _____________________________________________ */
+#table {
+    border-collapse: collapse;
+    width: 60rem;
+    height: 70px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.389);
+}
+
+caption {
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.389);
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.285);
+    background-color: #d9eef5;
+    transition: transform 1s;
+}
+
+caption.table-item {
+    height: 70px;
+    padding: 15px;
+}
+
+caption strong {
+    font-size: 25px;
+}
+
+caption:hover {
+    transform: translateX(0) scale(1.02);
+}
+
+thead {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.196);
+}
+
+.table-item {
+    text-align: center;
+    border: 1px solid #000000;
+    padding: 6px;
+}
+
+input.input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #dfdbd2;
+    padding: 9px;
+}
+
+tr {
+    height: 50px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
+}
+
+/* Button _____________________________________________ */
+.btn {
+    border: 1px solid black;
+    padding: 5.5px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #e9f3f7;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+.btn:hover {
+    background-color: #fdcbcb;
+    transition: 0.5s;
+    opacity: 0.7s;
+}
+
+/* Footer */
+#footer {
+    padding: 50px;
+    text-align: center;
+}
