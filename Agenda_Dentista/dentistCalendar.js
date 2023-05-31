@@ -23,40 +23,33 @@ const pacientes = {
 const dia_1 = 300
 const dia_2 = 240
 const dia_3 = 180
-let result;
 
 
-
-// main ________________________________________
-result = calcHours(pacientes, dia_1)
-console.log(`Os pacientes do 1º dia são: ${result.dia_1_pacientes}`)
-result = calcHours(pacientes, dia_2)
-console.log(`Os pacientes do 2º dia são: ${result.dia_2_pacientes}`)
-result = calcHours(pacientes, dia_3)
-console.log(`Os pacientes do 3º dia são: ${result.dia_3_pacientes}`)
+// main ________________________________________________________________
+const result = calcHours(pacientes, dia_1, dia_2, dia_3)
+console.log(`Os pacientes do 1º dia são: ${result.dia_1_pacientes.join(',')}`)
+console.log(`Os pacientes do 2º dia são: ${result.dia_2_pacientes.join(',')}`)
+console.log(`Os pacientes do 3º dia são: ${result.dia_3_pacientes.join(',')}`)
 
 
 
  // Fucntions __________________________________
 
- function calcHours(pacientes, diaTeste){
+ function calcHours(pacientes, dia_1, dia_2, dia_3){
 
     let dia_1_pacientes = []
     let dia_2_pacientes = []
     let dia_3_pacientes = []
-    let horarioPaciente;
 
     for(let i in pacientes) {
-        horarioPaciente = pacientes[i]
-        
-        if(diaTeste >= horarioPaciente) {
-            diaTeste -= horarioPaciente
+        if(dia_1 >= pacientes[i]) {
+            dia_1 -= pacientes[i]
             dia_1_pacientes.push(i)
-        } else if (diaTeste <= dia_2) {
-            diaTeste -= horarioPaciente;
-            dia_2_pacientes.push(i);
-        } else if (diaTeste <= dia_3) {
-            diaTeste -= horarioPaciente
+        } else if (dia_2 >= pacientes[i]) {
+            dia_2 -= pacientes[i]
+            dia_2_pacientes.push(i)
+        } else if (dia_3 >= pacientes[i]) {
+            dia_3 -= pacientes[i]
             dia_3_pacientes.push(i)
         }
      }
