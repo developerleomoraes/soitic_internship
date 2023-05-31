@@ -4,7 +4,7 @@
 
 >Projeto realizado para a vaga de estágio em Desenvovimento Web
 
-Projeto construído durante o estudo web - Projeto Front-End
+Projeto construído durante o processo web - Projeto Front-End
 
 [🔗Clique aqui para acessar]()
 
